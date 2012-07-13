@@ -52,14 +52,14 @@ _update_prompt () {
     u="$e_bred\u$e_normal";
     p="$e_bred#$e_normal";
   else
-    u="$e_purple\u$e_normal";
+    u="$e_bred\u$e_normal";
     p="\$";
   fi
 
 
   ## Initial prompt
-	_prompt="[$e_white$u$e_normal:$e_cyan\w$e_normal]";
-  #_prompt="[$e_white>>>$e_normal:$e_cyan\w$e_normal]";
+#_prompt="[$e_white$u$e_normal:$e_cyan\w$e_normal]";
+  _prompt="[$e_byellow>>>$e_normal:$e_cyan\W$e_normal]";
 
   ## Color git status if any
   branch=`__git_ps1 " (%s)"`
